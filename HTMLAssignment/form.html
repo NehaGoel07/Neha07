@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Form TTN</title>
+        <link rel="stylesheet" type="text/css" href="form-style.css">
+    </head>
+    <body>
+        <header >
+            <h3>TO THE NEW</h3>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">QuickHelp</a>
+            </nav> 
+            <br><br>
+    </header>
+    <div id="content-holder">
+        <div id="formHeader">
+            <p>Bug Report</p>
+        </div>
+        <form id="formBody">
+            <label>Title:*</label><br>
+            <input type="text"><br>
+            <label>Description:*</label><br>
+            <textarea naame="desc"></textarea>
+            <label>Operating System:</label>
+            <select>
+            <option value="WindowsXP">WindowsXP</option>
+            <option value="Linux">Linux</option>
+            <option value="Mac">Mac</option>
+            <option value="Android">Android</option>
+            </select><br>
+            <label>Product:*</label><br>
+            <select id="product">
+                <option value="Formoid">Formoid</option>
+                <option value="Formoid1">Formoid1</option>
+            </select><br>
+            <label>Version:*</label>
+        </br><input type="text" style="width: 80px;"><br>
+
+            <label>License:</label><br>
+            <input type="radio" name="license"><label for="type">Free</label>
+            <input type="radio" name="license"><label for="type">Business</label><br>
+
+            <label>Severity:</label>
+            <select>
+                <option value="Critical">Critical</option>
+                <option value="Moderate">Moderate</option>
+            </select><br>
+            <label>Attachments:</label><br>
+            <ul>
+            <li id="noFile"><label for="fup">No File Selected</label></li>
+            <li id="upload"><label id="upload1">Choose file<input type="file" id="fup"></label></li>
+        </ul>
+    </form>
+            <div id="formFooter">
+                <input type="submit" name="Send" value="Send">
+            </div>
+            
+
+        
+        </div>
+    </body>
+</html>

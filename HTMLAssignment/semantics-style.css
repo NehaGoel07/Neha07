@@ -1,0 +1,22 @@
+nav{
+    background-color: black;
+    height: 25px;
+    padding: 5px;
+}
+h2{
+    background-color: gray;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+#container{
+    background-color: darkgray;
+    height: 30px;
+    padding: 5px;
+}
+img{
+    height: 260px;
+    width: 260px;
+}
