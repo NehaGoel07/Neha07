@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="form_bootstrapStyle.css">
+    <title>Bootstrap Form</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div id="formHeader1">
+            <h3>To The New</h3>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Quick Help</a>
+                </li>
+                </ul>
+                </div>
+        </div>
+        <form id="form1">
+            <div id="FormHeader">
+                <label>Bug Report</label>
+            </div>
+            <div class="form-group">
+                <label for="Title">Title:*</label>
+                <input type="text" class="form-control" id="Title">
+            </div>
+            <div class="form-group">
+                <label for="desc">Description:*</label><br>
+                <textarea class="form-control" id="desc"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="OS">Operating System:</label><br>
+                <select class="form-control text-white" id="OS" style="background-color: #3CBC9C;">
+                <option>Windows XP</option>
+                <option>Ubuntu</option>
+                <option>Mac</option>
+                <option>Android</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="products">Products:*</label><br>
+                <select class="form-control text-white" id="products" style="background-color: #3CBC9C;">
+                <option>Formoid</option>
+                <option>Formoid1</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Version">Version:*</label>
+                <input type="text" class="form-control" id="Version">
+            </div>
+            <label for="license" id="l1">License:</label><br>
+            <div class="custom-control custom-radio custom-control-inline px-5">
+                <input type="radio" class="custom-control-input" id="License" name="optradio">
+                <label class="custom-control-label" for="License">Free</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline px-4">
+                <input type="radio" class="custom-control-input" id="License1" name="optradio">
+                <label class="custom-control-label" for="License1">Business</label>
+              </div>
+              <div class="form-group">
+                <label for="severity">Severity:*</label><br>
+                <select class="form-control text-white" id="severity" style="background-color: #3CBC9C;">
+                <option>Critical</option>
+                <option>Moderate</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="File">Attachments:</label>
+                <div class="custom-file">
+                <input type="file" class="custom-file-input" id="File">
+                <label class="custom-file-label" for="File">No File Selected</label>
+              </div></div>
+            <div id="formFooter">
+                <button type="button" class="btn1 px-4" >Send</button>
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
