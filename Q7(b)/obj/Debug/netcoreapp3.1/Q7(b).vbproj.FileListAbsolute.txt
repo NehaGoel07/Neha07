@@ -1,0 +1,10 @@
+C:\Users\Neha Goel\source\repos\Q7(b)\bin\Debug\netcoreapp3.1\Q7(b).exe
+C:\Users\Neha Goel\source\repos\Q7(b)\bin\Debug\netcoreapp3.1\Q7(b).deps.json
+C:\Users\Neha Goel\source\repos\Q7(b)\bin\Debug\netcoreapp3.1\Q7(b).runtimeconfig.json
+C:\Users\Neha Goel\source\repos\Q7(b)\bin\Debug\netcoreapp3.1\Q7(b).runtimeconfig.dev.json
+C:\Users\Neha Goel\source\repos\Q7(b)\bin\Debug\netcoreapp3.1\Q7(b).dll
+C:\Users\Neha Goel\source\repos\Q7(b)\bin\Debug\netcoreapp3.1\Q7(b).pdb
+C:\Users\Neha Goel\source\repos\Q7(b)\obj\Debug\netcoreapp3.1\Q7(b).AssemblyInfoInputs.cache
+C:\Users\Neha Goel\source\repos\Q7(b)\obj\Debug\netcoreapp3.1\Q7(b).AssemblyInfo.vb
+C:\Users\Neha Goel\source\repos\Q7(b)\obj\Debug\netcoreapp3.1\Q7(b).dll
+C:\Users\Neha Goel\source\repos\Q7(b)\obj\Debug\netcoreapp3.1\Q7(b).pdb
