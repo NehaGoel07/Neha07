@@ -1,0 +1,11 @@
+C:\Users\Neha Goel\source\repos\AssignmentIntro\bin\Debug\netcoreapp3.1\AssignmentIntro.exe
+C:\Users\Neha Goel\source\repos\AssignmentIntro\bin\Debug\netcoreapp3.1\AssignmentIntro.deps.json
+C:\Users\Neha Goel\source\repos\AssignmentIntro\bin\Debug\netcoreapp3.1\AssignmentIntro.runtimeconfig.json
+C:\Users\Neha Goel\source\repos\AssignmentIntro\bin\Debug\netcoreapp3.1\AssignmentIntro.runtimeconfig.dev.json
+C:\Users\Neha Goel\source\repos\AssignmentIntro\bin\Debug\netcoreapp3.1\AssignmentIntro.dll
+C:\Users\Neha Goel\source\repos\AssignmentIntro\bin\Debug\netcoreapp3.1\AssignmentIntro.pdb
+C:\Users\Neha Goel\source\repos\AssignmentIntro\obj\Debug\netcoreapp3.1\AssignmentIntro.AssemblyInfoInputs.cache
+C:\Users\Neha Goel\source\repos\AssignmentIntro\obj\Debug\netcoreapp3.1\AssignmentIntro.AssemblyInfo.cs
+C:\Users\Neha Goel\source\repos\AssignmentIntro\obj\Debug\netcoreapp3.1\AssignmentIntro.dll
+C:\Users\Neha Goel\source\repos\AssignmentIntro\obj\Debug\netcoreapp3.1\AssignmentIntro.pdb
+C:\Users\Neha Goel\source\repos\AssignmentIntro\obj\Debug\netcoreapp3.1\AssignmentIntro.csprojAssemblyReference.cache
