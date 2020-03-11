@@ -1,0 +1,406 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API_Advance copy",
+		"_postman_id": "fa498014-b37a-582e-18de-4b4a9f026e41",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:63809/api/Employee/Show",
+			"request": {
+				"url": "http://localhost:63809/api/Employee/Show",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Emp_name\":\"Bineeta\",\n\t\"Emp_salary\":23000\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "932f8d94-9a25-4d32-b82a-a6856f8f8fdc",
+					"name": "http://localhost:63809/api/Employee/Show",
+					"originalRequest": {
+						"url": "http://localhost:63809/api/Employee/Show",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Emp_name\":\"Bineeta\",\n\t\"Emp_salary\":23000\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "1895",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Wed, 11 Mar 2020 04:54:23 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 59,
+					"body": "{\"table\":[{\"emp_id\":100,\"emp_name\":\"Neha\",\"emp_dob\":\"1995-08-07T00:00:00\",\"emp_salary\":15100.0000,\"manager_id\":111,\"isTrainer\":false},{\"emp_id\":102,\"emp_name\":\"Vijay\",\"emp_dob\":\"1995-11-22T00:00:00\",\"emp_salary\":15000.0000,\"manager_id\":112,\"isTrainer\":false},{\"emp_id\":103,\"emp_name\":\"Vishesh\",\"emp_dob\":\"1997-08-22T00:00:00\",\"emp_salary\":15000.0000,\"manager_id\":113,\"isTrainer\":false},{\"emp_id\":104,\"emp_name\":\"Abhishek\",\"emp_dob\":\"1997-09-25T00:00:00\",\"emp_salary\":15000.0000,\"manager_id\":112,\"isTrainer\":false},{\"emp_id\":105,\"emp_name\":\"Shagun\",\"emp_dob\":\"1997-02-13T00:00:00\",\"emp_salary\":15000.0000,\"manager_id\":110,\"isTrainer\":false},{\"emp_id\":106,\"emp_name\":\"Punita\",\"emp_dob\":\"1997-04-17T00:00:00\",\"emp_salary\":15000.0000,\"manager_id\":111,\"isTrainer\":false},{\"emp_id\":107,\"emp_name\":\"Latika\",\"emp_dob\":\"1995-09-17T00:00:00\",\"emp_salary\":15000.0000,\"manager_id\":113,\"isTrainer\":false},{\"emp_id\":108,\"emp_name\":\"Arpit\",\"emp_dob\":\"1995-10-20T00:00:00\",\"emp_salary\":15000.0000,\"manager_id\":111,\"isTrainer\":false},{\"emp_id\":109,\"emp_name\":\"Azeem\",\"emp_dob\":\"1995-03-21T00:00:00\",\"emp_salary\":15000.0000,\"manager_id\":113,\"isTrainer\":false},{\"emp_id\":110,\"emp_name\":\"Sachin\",\"emp_dob\":\"1985-03-21T00:00:00\",\"emp_salary\":70000.0000,\"manager_id\":null,\"isTrainer\":true},{\"emp_id\":111,\"emp_name\":\"Sakshi\",\"emp_dob\":\"1987-05-04T00:00:00\",\"emp_salary\":50000.0000,\"manager_id\":110,\"isTrainer\":true},{\"emp_id\":112,\"emp_name\":\"Ritesh\",\"emp_dob\":\"1986-01-01T00:00:00\",\"emp_salary\":50000.0000,\"manager_id\":110,\"isTrainer\":true},{\"emp_id\":113,\"emp_name\":\"Ashish\",\"emp_dob\":\"1988-04-15T00:00:00\",\"emp_salary\":50000.0000,\"manager_id\":110,\"isTrainer\":true},{\"emp_id\":116,\"emp_name\":\"Sonal\",\"emp_dob\":\"1998-07-25T00:00:00\",\"emp_salary\":15000.0000,\"manager_id\":112,\"isTrainer\":false},{\"emp_id\":117,\"emp_name\":\"Bineeta\",\"emp_dob\":\"1996-05-28T00:00:00\",\"emp_salary\":23000.0000,\"manager_id\":402,\"isTrainer\":true}]}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:63809/api/Employee/UpdateEmp",
+			"request": {
+				"url": "http://localhost:63809/api/Employee/UpdateEmp",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Emp_name\":\"Bineeta\",\n\t\"Emp_salary\":23000\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "ec2fa9bb-84ec-465b-b5e7-5227e34254de",
+					"name": "http://localhost:63809/api/Employee/UpdateEmp",
+					"originalRequest": {
+						"url": "http://localhost:63809/api/Employee/UpdateEmp",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Emp_name\":\"Bineeta\",\n\t\"Emp_salary\":23000\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Wed, 11 Mar 2020 04:54:33 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 141,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:63809/api/Employee/ShowSingle/100",
+			"request": {
+				"url": "http://localhost:63809/api/Employee/ShowSingle/100",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Emp_name\":\"Bineeta\",\n\t\"Emp_dob\":\"1996-05-28\",\n\t\"Emp_salary\":25000,\n\t\"Manager_id\":402,\n\t\"IsTrainer\":1\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "5616b232-79bb-4a63-9bea-0a8b3ee0f3a9",
+					"name": "http://localhost:63809/api/Employee/ShowSingle/100",
+					"originalRequest": {
+						"url": "http://localhost:63809/api/Employee/ShowSingle/100",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Emp_name\":\"Bineeta\",\n\t\"Emp_dob\":\"1996-05-28\",\n\t\"Emp_salary\":25000,\n\t\"Manager_id\":402,\n\t\"IsTrainer\":1\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "135",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Wed, 11 Mar 2020 04:54:43 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 51,
+					"body": "{\"table\":[{\"emp_id\":100,\"emp_name\":\"Neha\",\"emp_dob\":\"1995-08-07T00:00:00\",\"emp_salary\":15100.0000,\"manager_id\":111,\"isTrainer\":false}]}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:63809/api/Employee/InsertEmp",
+			"request": {
+				"url": "http://localhost:63809/api/Employee/DelEmp",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Emp_name\":\"Yati\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "dc504b40-728d-4a22-9cbc-76d3a6d42d0a",
+					"name": "http://localhost:63809/api/Employee/InsertEmp",
+					"originalRequest": {
+						"url": "http://localhost:63809/api/Employee/DelEmp",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Emp_name\":\"Yati\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Wed, 11 Mar 2020 04:54:54 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 47,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:63809/api/Employee/InsertEmp",
+			"request": {
+				"url": "http://localhost:63809/api/Employee/InsertEmp",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Emp_name\":\"Bineeta\",\n\t\"Emp_dob\":\"1996-05-28\",\n\t\"Emp_salary\":25000,\n\t\"Manager_id\":402,\n\t\"IsTrainer\":1\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "8d6893fd-5b56-4032-a035-5fa0e3d4ea81",
+					"name": "http://localhost:63809/api/Employee/InsertEmp",
+					"originalRequest": {
+						"url": "http://localhost:63809/api/Employee/InsertEmp",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Emp_name\":\"Yati\",\n\t\"Emp_dob\":\"1990-10-26\",\n\t\"Emp_salary\":50000,\n\t\"Manager_id\":404,\n\t\"IsTrainer\":1\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Wed, 11 Mar 2020 04:55:33 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 60,
+					"body": "true"
+				}
+			]
+		}
+	]
+}
