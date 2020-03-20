@@ -1,0 +1,450 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CodeFirst",
+		"_postman_id": "f38eb94f-d9c7-6a05-baab-08ced5259fa9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:53464/api/CodeFirst/DisplayAll",
+			"request": {
+				"url": "http://localhost:53464/api/CodeFirst/DisplayAll",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "52272e7e-bf6f-4278-938f-a3302ad1c04c",
+					"name": "http://localhost:53464/api/CodeFirst/DisplayAll",
+					"originalRequest": {
+						"url": "http://localhost:53464/api/CodeFirst/DisplayAll",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "202",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 19 Mar 2020 12:50:49 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 2034,
+					"body": "[{\"custId\":1,\"custName\":\"Neha\",\"custPhone\":8743046792,\"custAddress\":\"Akshardham\",\"orders\":[{\"orderId\":1,\"fkCustId\":1,\"fkProdId\":1,\"orderAmount\":500.00,\"orderDate\":\"2020-03-19T00:00:00\",\"fkProd\":null}]}]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:53464/api/CodeFirst/InsertNew",
+			"request": {
+				"url": "http://localhost:53464/api/CodeFirst/InsertNew",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"OrderAmount\":500,\n\t\"OrderDate\":\"2020-03-19\",\n\t\"FKCust\":{\n\t\t\"CustName\":\"Ankit\",\n\t\t\"CustPhone\":8800623668,\n\t\t\"CustAddress\":\"Tri Nagar\",\n\t\t\"NoOfOrders\":1\n\t\t\n\t},\n\t\"FKProd\":{\n\t\t\"ProdName\":\"Sunglasses\",\n\t\t\"ProdPrice\":500\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "c60901e2-834c-47d9-be2e-3014982a3742",
+					"name": "http://localhost:53464/api/CodeFirst/InsertNew",
+					"originalRequest": {
+						"url": "http://localhost:53464/api/CodeFirst/InsertNew",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"OrderAmount\":500,\n\t\"OrderDate\":\"2020-03-19\",\n\t\"FKCust\":{\n\t\t\"CustName\":\"Neha\",\n\t\t\"CustPhone\":8743046792,\n\t\t\"CustAddress\":\"Akshardham\"\n\t},\n\t\"FKProd\":{\n\t\t\"ProdName\":\"Phone Cover\",\n\t\t\"ProdPrice\":500\n\t}\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 19 Mar 2020 12:45:58 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 13613,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:53464/api/CodeFirst/DisplaySingle/2",
+			"request": {
+				"url": "http://localhost:53464/api/CodeFirst/DisplaySingle/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"OrderAmount\":500,\n\t\"OrderDate\":\"2020-02-19\",\n\t\"FKCust\":{\n\t\t\"CustName\":\"Ankit\",\n\t\t\"CustPhone\":88002554361,\n\t\t\"CustAddress\":\"Tri Nagar\"\n\t},\n\t\"FKProd\":{\n\t\t\"ProdName\":\"Sunglasses\",\n\t\t\"ProdPrice\":500\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "4f916ba6-2607-41e4-96c3-263c91c08598",
+					"name": "http://localhost:53464/api/CodeFirst/DisplaySingle/2",
+					"originalRequest": {
+						"url": "http://localhost:53464/api/CodeFirst/DisplaySingle/2",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"OrderAmount\":500,\n\t\"OrderDate\":\"2020-02-19\",\n\t\"FKCust\":{\n\t\t\"CustName\":\"Ankit\",\n\t\t\"CustPhone\":88002554361,\n\t\t\"CustAddress\":\"Tri Nagar\"\n\t},\n\t\"FKProd\":{\n\t\t\"ProdName\":\"Sunglasses\",\n\t\t\"ProdPrice\":500\n\t}\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "266",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 19 Mar 2020 12:56:58 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 444,
+					"body": "[{\"custId\":2,\"custName\":\"Ankit\",\"custPhone\":88002554361,\"custAddress\":\"Tri Nagar\",\"orders\":[{\"orderId\":2,\"fkCustId\":2,\"fkProdId\":2,\"orderAmount\":500.00,\"orderDate\":\"2020-02-19T00:00:00\",\"fkProd\":{\"prodId\":2,\"prodName\":\"Sunglasses\",\"prodPrice\":500.00,\"orders\":[]}}]}]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:53464/api/CodeFirst/AddOrder",
+			"request": {
+				"url": "http://localhost:53464/api/CodeFirst/AddOrder",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FKCustId\":4,\n\t\"FKProdId\":1,\n\t\"OrderAmount\":500,\n\t\"OrderDate\":\"2020-03-10\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "38ea702a-631d-4fe1-9e02-205660900b14",
+					"name": "http://localhost:53464/api/CodeFirst/AddOrder",
+					"originalRequest": {
+						"url": "http://localhost:53464/api/CodeFirst/AddOrder",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"FKCustId\":2,\n\t\"FKProdId\":1,\n\t\"OrderAmount\":500,\n\t\"OrderDate\":\"2020-03-10\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 19 Mar 2020 13:13:00 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 67449,
+					"body": "true"
+				},
+				{
+					"id": "b1dffd58-e5b6-4602-bce0-d8325491d907",
+					"name": "http://localhost:53464/api/CodeFirst/AddOrder",
+					"originalRequest": {
+						"url": "http://localhost:53464/api/CodeFirst/AddOrder",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"FKCustId\":4,\n\t\"FKProdId\":1,\n\t\"OrderAmount\":500,\n\t\"OrderDate\":\"2020-03-10\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 20 Mar 2020 14:27:19 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 11018,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:53464/api/CodeFirst/Delete",
+			"request": {
+				"url": "http://localhost:53464/api/CodeFirst/Delete",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"OrderId\":6,\n\t\"FKCustId\":4,\n\t\"FKProdId\":4\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "1120d82a-82dd-4d42-a714-ff28346279c0",
+					"name": "http://localhost:53464/api/CodeFirst/Delete",
+					"originalRequest": {
+						"url": "http://localhost:53464/api/CodeFirst/Delete",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"OrderId\":6,\n\t\"FKCustId\":4,\n\t\"FKProdId\":4\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "5",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 19 Mar 2020 13:24:37 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 17307,
+					"body": "false"
+				}
+			]
+		}
+	]
+}
