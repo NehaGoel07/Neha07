@@ -1,0 +1,523 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CodeFirstEntityFramework",
+		"_postman_id": "ac665db6-1960-810d-a165-db10aaea18ae",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:57161/api/CodeFirst/AddData",
+			"request": {
+				"url": "http://localhost:57161/api/CodeFirst/AddData",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"OrderAmount\":500,\n\t\"OrderDate\":\"2020-03-19\",\n\t\"FKCust\":{\n\t\t\"CustName\":\"Ankit\",\n\t\t\"CustPhone\":8800623668,\n\t\t\"CustAddress\":\"Tri Nagar\",\n\t\t\"NoOfOrders\":1\n\t\t\n\t},\n\t\"FKProd\":{\n\t\t\"ProdName\":\"Sunglasses\",\n\t\t\"ProdPrice\":500\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "4e1ef6a0-6406-4f43-85c3-c570d56976f8",
+					"name": "http://localhost:57161/api/CodeFirst/AddData",
+					"originalRequest": {
+						"url": "http://localhost:57161/api/CodeFirst/AddData",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"OrderAmount\":500,\n\t\"OrderDate\":\"2020-03-19\",\n\t\"FKCust\":{\n\t\t\"CustName\":\"Ankit\",\n\t\t\"CustPhone\":8800623668,\n\t\t\"CustAddress\":\"Tri Nagar\",\n\t\t\"NoOfOrders\":1\n\t\t\n\t},\n\t\"FKProd\":{\n\t\t\"ProdName\":\"Sunglasses\",\n\t\t\"ProdPrice\":500\n\t}\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 20 Mar 2020 21:55:39 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcTmVoYSBHb2VsXHNvdXJjZVxyZXBvc1xFbnRpdHlGcmFtZXdvcmtDb2RlRmlyc3RcYXBpXENvZGVGaXJzdFxBZGREYXRh?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 13922,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:57161/api/CodeFirst/Update",
+			"request": {
+				"url": "http://localhost:57161/api/CodeFirst/Update",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"CustId\":2,\n\t\"ProdId\":1,\n\t\"OrderAmount\":500,\n\t\"OrderDate\":\"2020-03-10\"\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "45fe1719-9011-4ec7-abda-8040540111c3",
+					"name": "http://localhost:57161/api/CodeFirst/Update",
+					"originalRequest": {
+						"url": "http://localhost:57161/api/CodeFirst/Update",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"CustId\":2,\n\t\"ProdId\":1,\n\t\"OrderAmount\":500,\n\t\"OrderDate\":\"2020-03-10\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 20 Mar 2020 22:03:28 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcTmVoYSBHb2VsXHNvdXJjZVxyZXBvc1xFbnRpdHlGcmFtZXdvcmtDb2RlRmlyc3RcYXBpXENvZGVGaXJzdFxVcGRhdGU=?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 34673,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:57161/api/CodeFirst/Delete",
+			"request": {
+				"url": "http://localhost:57161/api/CodeFirst/Delete",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"OrderId\":5,\n\t\"CustId\":3,\n\t\"ProdId\":3\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "231ebf34-64dc-4102-8f14-5fabd1133c87",
+					"name": "http://localhost:57161/api/CodeFirst/Delete",
+					"originalRequest": {
+						"url": "http://localhost:57161/api/CodeFirst/Delete",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"OrderId\":5,\n\t\"CustId\":3,\n\t\"ProdId\":3\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "4",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Mar 2020 06:03:17 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcTmVoYSBHb2VsXHNvdXJjZVxyZXBvc1xFbnRpdHlGcmFtZXdvcmtDb2RlRmlyc3RcYXBpXENvZGVGaXJzdFxEZWxldGU=?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 46584,
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:57161/api/CodeFirst/ShowSingle/1",
+			"request": {
+				"url": "http://localhost:57161/api/CodeFirst/ShowSingle/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "e85b7119-07c1-481c-b3a3-ff76410a5ebe",
+					"name": "http://localhost:57161/api/CodeFirst/ShowSingle/1",
+					"originalRequest": {
+						"url": "http://localhost:57161/api/CodeFirst/ShowSingle/1",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "1193",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Mar 2020 09:30:10 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcTmVoYSBHb2VsXHNvdXJjZVxyZXBvc1xFbnRpdHlGcmFtZXdvcmtDb2RlRmlyc3RcYXBpXENvZGVGaXJzdFxTaG93U2luZ2xlXDE=?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 21394,
+					"body": "[{\"Orders\":[{\"FkProd\":{\"Orders\":[{\"FkCust\":{\"Orders\":[{\"OrderId\":4,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1},{\"FkProd\":{\"Orders\":[],\"ProdId\":2,\"ProdName\":\"Bag\",\"ProdPrice\":500.00},\"OrderId\":2,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-01T00:00:00\",\"CustId\":2,\"ProdId\":2}],\"CustId\":2,\"CustName\":\"Neha\",\"CustPhone\":8743046792,\"CustAddress\":\"Akshardham\",\"NoOfOrders\":3},\"OrderId\":3,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1},{\"FkCust\":{\"Orders\":[{\"OrderId\":3,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1},{\"FkProd\":{\"Orders\":[],\"ProdId\":2,\"ProdName\":\"Bag\",\"ProdPrice\":500.00},\"OrderId\":2,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-01T00:00:00\",\"CustId\":2,\"ProdId\":2}],\"CustId\":2,\"CustName\":\"Neha\",\"CustPhone\":8743046792,\"CustAddress\":\"Akshardham\",\"NoOfOrders\":3},\"OrderId\":4,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1}],\"ProdId\":1,\"ProdName\":\"Sunglasses\",\"ProdPrice\":500.00},\"OrderId\":1,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-19T00:00:00\",\"CustId\":1,\"ProdId\":1}],\"CustId\":1,\"CustName\":\"Ankit\",\"CustPhone\":8800623668,\"CustAddress\":\"Tri Nagar\",\"NoOfOrders\":1}]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:57161/api/CodeFirst/Show",
+			"request": {
+				"url": "http://localhost:57161/api/CodeFirst/Show",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "da367552-f8ac-48f7-8fde-834db56abc92",
+					"name": "http://localhost:57161/api/CodeFirst/Show",
+					"originalRequest": {
+						"url": "http://localhost:57161/api/CodeFirst/Show",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "2393",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Mar 2020 06:10:07 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?QzpcVXNlcnNcTmVoYSBHb2VsXHNvdXJjZVxyZXBvc1xFbnRpdHlGcmFtZXdvcmtDb2RlRmlyc3RcYXBpXENvZGVGaXJzdFxTaG93?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 4780,
+					"body": "[{\"Orders\":[{\"FkProd\":{\"Orders\":[{\"FkCust\":{\"Orders\":[{\"FkProd\":{\"Orders\":[],\"ProdId\":2,\"ProdName\":\"Bag\",\"ProdPrice\":500.00},\"OrderId\":2,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-01T00:00:00\",\"CustId\":2,\"ProdId\":2},{\"OrderId\":4,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1}],\"CustId\":2,\"CustName\":\"Neha\",\"CustPhone\":8743046792,\"CustAddress\":\"Akshardham\",\"NoOfOrders\":3},\"OrderId\":3,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1},{\"FkCust\":{\"Orders\":[{\"FkProd\":{\"Orders\":[],\"ProdId\":2,\"ProdName\":\"Bag\",\"ProdPrice\":500.00},\"OrderId\":2,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-01T00:00:00\",\"CustId\":2,\"ProdId\":2},{\"OrderId\":3,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1}],\"CustId\":2,\"CustName\":\"Neha\",\"CustPhone\":8743046792,\"CustAddress\":\"Akshardham\",\"NoOfOrders\":3},\"OrderId\":4,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1}],\"ProdId\":1,\"ProdName\":\"Sunglasses\",\"ProdPrice\":500.00},\"OrderId\":1,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-19T00:00:00\",\"CustId\":1,\"ProdId\":1}],\"CustId\":1,\"CustName\":\"Ankit\",\"CustPhone\":8800623668,\"CustAddress\":\"Tri Nagar\",\"NoOfOrders\":1},{\"Orders\":[{\"FkProd\":{\"Orders\":[],\"ProdId\":2,\"ProdName\":\"Bag\",\"ProdPrice\":500.00},\"OrderId\":2,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-01T00:00:00\",\"CustId\":2,\"ProdId\":2},{\"FkProd\":{\"Orders\":[{\"FkCust\":{\"Orders\":[],\"CustId\":1,\"CustName\":\"Ankit\",\"CustPhone\":8800623668,\"CustAddress\":\"Tri Nagar\",\"NoOfOrders\":1},\"OrderId\":1,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-19T00:00:00\",\"CustId\":1,\"ProdId\":1},{\"OrderId\":4,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1}],\"ProdId\":1,\"ProdName\":\"Sunglasses\",\"ProdPrice\":500.00},\"OrderId\":3,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1},{\"FkProd\":{\"Orders\":[{\"FkCust\":{\"Orders\":[],\"CustId\":1,\"CustName\":\"Ankit\",\"CustPhone\":8800623668,\"CustAddress\":\"Tri Nagar\",\"NoOfOrders\":1},\"OrderId\":1,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-19T00:00:00\",\"CustId\":1,\"ProdId\":1},{\"OrderId\":3,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1}],\"ProdId\":1,\"ProdName\":\"Sunglasses\",\"ProdPrice\":500.00},\"OrderId\":4,\"OrderAmount\":500.00,\"OrderDate\":\"2020-03-10T00:00:00\",\"CustId\":2,\"ProdId\":1}],\"CustId\":2,\"CustName\":\"Neha\",\"CustPhone\":8743046792,\"CustAddress\":\"Akshardham\",\"NoOfOrders\":3}]"
+				}
+			]
+		}
+	]
+}
