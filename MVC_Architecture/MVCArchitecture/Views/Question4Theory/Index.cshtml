@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+    <div class="container p-5">
+        <h2>Why we use App_Start, App_Data and Shared Folder</h2>
+
+        <p style="font-weight:bold"> App_Data Folder</p>
+
+        <p>This folder contains local DB file like xml files,.mdf file,LocalDb,etc. </p>
+
+
+        <p style="font-weight:bold"> App_Start Folder</p>
+
+        <p>It contains class files which are executed when the execution of the application starts.With the creation of the application this folder contains RouteConfig.cs file which contains the MapRoute for the controller which is further registered in Rout Table in global.asax file.</p>
+
+        <p style="font-weight:bold"> Shared Folder</p>
+
+        <p>
+            Shared folder is available in Views folder.It contains all the views that are used by other views of the controller.Usually main layout is kept in Shared folder so that all other controller's view can use the layout as basic page view.
+        </p>
+        </div>
