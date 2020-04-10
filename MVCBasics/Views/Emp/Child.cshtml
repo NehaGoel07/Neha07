@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MVCBasics.Models.Employee>
+
+@{
+    ViewBag.Title = "Child";
+}
+
+<h2>Child</h2>
+
+<table class="table">
+    <tr >
+        <th>
+            @Html.DisplayNameFor(model => model.emp_id)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.emp_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gender)
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.emp_id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.emp_name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.salary)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.gender)
+    </td>
+   
+
+</tr>
+}
+
+</table>
