@@ -1,0 +1,9 @@
+﻿@model IEnumerable<MVCBasics.Models.Employee>
+@{
+    ViewBag.Title = "CallChild";
+}
+
+<h2>CallChild</h2>
+
+@Html.Action("Child","Emp");
+

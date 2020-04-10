@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Ques4";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container p-5">
+    <h2>Explain RenderPartial, Partial and Render Action with examples</h2>
+    <h3>RenderPartial</h3>
+    <p class="text-justify">
+        The return type of Render Partial is void.It's value cannot be saved in a variable for future use.This method result will directly be written to the http response stream.This method is faster than Partial method.
+
+    </p>
+    <h3>Partial</h3>
+    <p class="text-justify">
+        Partial returns MVC.HtmlString.It renders the partial view as HTML-encoded string.It's value can be stored in a variable for future use.
+    </p>
+    <h3>Render Action</h3>
+    <p class="text-justify">
+        It is used to call any action method from the view.
+    </p>
+</div>
