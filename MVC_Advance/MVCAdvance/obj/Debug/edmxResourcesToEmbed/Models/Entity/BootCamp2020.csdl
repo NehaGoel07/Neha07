@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BootCamp2020Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="salary" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LoginDetail">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Role" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBL_Employees">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emp_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="emp_dob" Type="DateTime" Precision="3" />
+    <Property Name="emp_salary" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="manager_id" Type="Int32" />
+    <Property Name="IsTrainer" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="conn" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="LoginDetails" EntityType="Self.LoginDetail" />
+    <EntitySet Name="TBL_Employees" EntityType="Self.TBL_Employees" />
+  </EntityContainer>
+</Schema>
