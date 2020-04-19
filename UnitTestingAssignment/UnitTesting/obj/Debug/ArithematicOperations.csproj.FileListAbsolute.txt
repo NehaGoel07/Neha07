@@ -1,0 +1,6 @@
+C:\Users\Neha Goel\source\repos\UnitTesting\bin\Debug\UnitTesting.exe.config
+C:\Users\Neha Goel\source\repos\UnitTesting\bin\Debug\UnitTesting.exe
+C:\Users\Neha Goel\source\repos\UnitTesting\bin\Debug\UnitTesting.pdb
+C:\Users\Neha Goel\source\repos\UnitTesting\obj\Debug\UnitTesting.exe
+C:\Users\Neha Goel\source\repos\UnitTesting\obj\Debug\UnitTesting.pdb
+C:\Users\Neha Goel\source\repos\UnitTesting\obj\Debug\ArithematicOperations.csprojAssemblyReference.cache
