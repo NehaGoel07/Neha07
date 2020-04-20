@@ -1,0 +1,79 @@
+﻿@page "/Calculator"
+@inject NavigationManager _navigate
+<h3>Calculator</h3>
+
+<div>
+    <div class="row">
+        <div class="col-sm-3">
+            <p>First Number:</p>
+        </div>
+        <div class="col-sm-4">
+            <input type="text" @bind="num1" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Second Number:</p>
+        </div>
+        <div class="col-sm-4">
+            <input type="text" @bind="num2" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Result:</p>
+        </div>
+        <div class="col-sm-4">
+            <input type="text" @bind="res" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <button type="button" class="btn-primary" @onclick="Addition">Addition</button>
+            <button type="button" class="btn-primary" @onclick="Subtraction">Subtraction</button>
+            <button type="button" class="btn-primary" @onclick="Multiplication">Multiplication</button>
+            <button type="button" class="btn-primary" @onclick="Division">Divison</button>
+        </div>
+    </div>
+
+</div>
+
+@code{
+
+
+    protected string num1;
+    protected string num2;
+    protected string res;
+
+    public void Addition()
+    {
+        res = (Convert.ToDouble(num1) + Convert.ToDouble(num2)).ToString();
+    }
+
+    public void Subtraction()
+    {
+        res = (Convert.ToDouble(num1) - Convert.ToDouble(num2)).ToString();
+    }
+
+    public void Multiplication()
+    {
+        res = (Convert.ToDouble(num1) * Convert.ToDouble(num2)).ToString();
+    }
+
+    public void Division()
+    {
+        if (Convert.ToDouble(num2) == 0)
+        {
+            _navigate.NavigateTo("Error");
+        }
+        else
+        {
+            res = (Convert.ToDouble(num1) / Convert.ToDouble(num2)).ToString();
+        }
+    }
+
+
+}

@@ -1,0 +1,36 @@
+﻿@page "/Ques3"
+<h3>Explain the Life cycle with example</h3>
+
+<p>
+    <b>Various method in the life cycle of Razor Component are:-</b>
+    <br /><br />
+    1.OnInitialized()<br />
+    =>It is a synchronous function.It is used to assign Parameters,properties,etc while initializing.For example:If we want to make a dropdown list of city and want to add the values to the dropdown list at the time of initialization the code can be written in this method.
+    <br /><br />
+    2.OnInitializedAsync()<br />
+    =>It is an asynchronous method of OnInitialized().Any API call or Call to Database can be written in this method.
+    <br />
+    <br />
+    3.OnParameterSet()<br />
+    =>If the component has any parameters those parameters are set in this method.As sson as this method will be invoked the values of the oaramter are set.
+    <br />
+    <br />
+    4.OnParameterAsync()<br />
+    =>This is the asynchronous method of ParameterSet method.If the values of the parameter is to be set from database or API the code is written in this method.
+    <br />
+    <br />
+    5.OnAfterRender()<br />
+    =>It is called just before the page is rendered.It accepts a parameter firstRender.If it is a firt request then the value of this parameter is false else it is true.
+    <br /><br />
+    6.OnAfterRenderAsync()<br />
+    =>It is the asynchromous method of OnAfterRender().This method also accepts the same parameter as that of OnAfterRender().
+    <br /><br />
+    7.ShouldRender()<br />
+    =>This gets called when state of the page is changed.If statehaschanged() is executed it will automatically call ShouldRender() and it will further call OnAfterRender or OnAfterRenderAsync.In this case the value of firstRender will be false.
+    <br /><br />
+    8.Dispose()<br />
+    =>To use this implement IDisposable interface.It is called when we navigate to another component.All the properties that are set on that component gets disposed.
+
+
+</p>
+
