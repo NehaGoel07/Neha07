@@ -1,0 +1,9 @@
+D:\ASP_Projects\TriviaGame\TriviaGameLibraryShared\bin\Debug\netcoreapp3.1\TriviaGameLibraryShared.deps.json
+D:\ASP_Projects\TriviaGame\TriviaGameLibraryShared\bin\Debug\netcoreapp3.1\TriviaGameLibraryShared.runtimeconfig.json
+D:\ASP_Projects\TriviaGame\TriviaGameLibraryShared\bin\Debug\netcoreapp3.1\TriviaGameLibraryShared.runtimeconfig.dev.json
+D:\ASP_Projects\TriviaGame\TriviaGameLibraryShared\bin\Debug\netcoreapp3.1\TriviaGameLibraryShared.dll
+D:\ASP_Projects\TriviaGame\TriviaGameLibraryShared\bin\Debug\netcoreapp3.1\TriviaGameLibraryShared.pdb
+D:\ASP_Projects\TriviaGame\TriviaGameLibraryShared\obj\Debug\netcoreapp3.1\TriviaGameLibraryShared.AssemblyInfoInputs.cache
+D:\ASP_Projects\TriviaGame\TriviaGameLibraryShared\obj\Debug\netcoreapp3.1\TriviaGameLibraryShared.AssemblyInfo.cs
+D:\ASP_Projects\TriviaGame\TriviaGameLibraryShared\obj\Debug\netcoreapp3.1\TriviaGameLibraryShared.dll
+D:\ASP_Projects\TriviaGame\TriviaGameLibraryShared\obj\Debug\netcoreapp3.1\TriviaGameLibraryShared.pdb
