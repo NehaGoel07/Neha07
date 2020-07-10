@@ -1,0 +1,8 @@
+2020-06-02 12:32:12.686 +05:30 [INF] Contoller:Student Action Method:GetAllStudent
+2020-06-02 12:33:21.910 +05:30 [INF] Contoller:Student Action Method:GetStudentById
+2020-06-02 15:02:48.925 +05:30 [INF] Contoller:Student Action Method:PostNewStudent
+2020-06-03 14:29:14.141 +05:30 [INF] Contoller:Student Action Method:GetByName
+2020-06-03 15:16:37.414 +05:30 [INF] Contoller:Student Action Method:GetAllStudent
+2020-06-03 16:48:42.863 +05:30 [INF] Contoller:Student Action Method:GetSpecificFields
+2020-06-03 16:57:53.341 +05:30 [INF] Contoller:Student Action Method:GetSpecificFields
+2020-06-30 17:57:08.830 +05:30 [INF] Contoller:Student Action Method:GetAllStudent
