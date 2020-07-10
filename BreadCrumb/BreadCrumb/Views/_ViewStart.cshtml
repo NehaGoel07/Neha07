@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+
+
+
+
+
+
+@*@if (ViewContext.RouteData.Values["controller"].ToString() == "Home")
+    {
+        @Html.Label(ViewContext.RouteData.Values["controller"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), ViewContext.RouteData.Values["controller"].ToString())
+        if (ViewContext.RouteData.Values["action"].ToString() != "Index")
+        {
+            @:/ @Html.ActionLink( ViewContext.RouteData.Values["action"].ToString(),ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString())
+        }
+    }
+
+    @if (ViewContext.RouteData.Values["controller"].ToString() != "Home")
+        {
+
+            @: @Html.Label(ViewContext.RouteData.Values["controller"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), ViewContext.RouteData.Values["controller"].ToString())
+            if (ViewContext.RouteData.Values["action"].ToString() != "Index")
+            {
+                @:/ @Html.ActionLink(ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString())
+            }
+        }*@

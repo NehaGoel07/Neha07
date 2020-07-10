@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@Html.ActionLink(
+    "List All Employees",
+    "Get",
+      "Employee",
+      null,
+      null, null,
+                 new AjaxOptions
+                 {
+                     UpdateTargetId = "UpdateContentDiv",
+                     InsertionMode = InsertionMode.Replace,
+                     HttpMethod = "GET"
+
+                 },
+      new { @class = "btn btn-primary" }
+     )
+
+
