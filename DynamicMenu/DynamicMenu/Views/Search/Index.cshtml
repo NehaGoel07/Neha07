@@ -1,0 +1,36 @@
+﻿@model IEnumerable<DynamicMenu.Models.TblEmpDetails>
+
+
+<div>
+    <label>Name</label>
+    <input type="text" />
+    <input type="button" value="Get Data" id="displayClick" />
+</div>
+
+
+<table class="table" id="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+        </tr>
+    </thead>
+    <tbody id="tableData">
+        
+        @*@foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+            </tr>
+        }*@
+    </tbody>
+</table>

@@ -1,0 +1,61 @@
+﻿@inject IMenuMasterService menu
+@inject SignInManager<ApplicationUser> signinManager
+@inject UserManager<ApplicationUser> userManager    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DynamicMenu</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <div class="container-fluid d-flex overflow-auto">
+        <div class="header">
+            @Html.Partial("_NavMenu")
+        </div>
+        <main role="main" class="container-fluid">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+
+    <script>
+        $(document).on('click', '#displayClick', function () {
+            //$("#displayClick").click(function () {
+            var url = "/Employee/Get";
+            $.get(url, function (result) {
+                $('#tableData').html(result);
+            });
+        });
+
+        //$(document).ready(function () {
+        //    $('#displayClick').click(function () {
+        //        $.ajax({
+        //        type: "GET",
+        //        url: "/Search/Get",
+        //        contentType: "application/json; charset=utf-8",
+        //        dataType: "html",
+        //            success: function (response)
+        //            {
+                       
+        //                var row = "";
+        //                //$.each(response, function(index, item){
+        //                //    row += "<tr><td>" + item.Name + "</td><td>" + item.Address + "</td></tr>";
+        //                //    alert(row);
+        //                //});
+        //                //alert(row);
+        //                //$('#tableData').html(row);
+        //            }
+        //        });
+        //    });
+        //});
+    </script>
+</body>
+</html>

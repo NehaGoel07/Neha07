@@ -1,0 +1,103 @@
+﻿@model DynamicMenu.Models.MenuMaster
+
+@{
+    ViewData["Title"] = "AddNew";
+}
+
+<h4 class="mt-2">Add New Menu</h4>
+
+<hr />
+<div class="row w-100" >
+    <div class="col-md-12 " >
+        <form asp-action="AddNew">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="col-md-6 col-xs">
+                    <div class="custom-input">
+                        <label asp-for="MenuID" class="control-label"></label>
+                        <input asp-for="MenuID" class="form-control" />
+                        <span asp-validation-for="MenuID" class="text-danger"></span>
+                        </div>
+                    </div>
+                <div class="col-md-6 col-xs">
+                    <div class="custom-input">
+                        <label asp-for="MenuName" class="control-label"></label>
+                        <input asp-for="MenuName" class="form-control" />
+                        <span asp-validation-for="MenuName" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-6 col-xs">
+                    <div class="custom-input">
+                        <div class="dropdown p-3">
+                            @Html.DropDownListFor(m => m.Parent_MenuID, new SelectList(ViewBag.menuData), "Select Parent MenuId")
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-md-6 col-xs">
+                    <div class="custom-input">
+                        <label asp-for="User_Roll" class="control-label">User Role</label>
+                        <input asp-for="User_Roll" class="form-control" />
+                        <span asp-validation-for="User_Roll" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-6 col-xs">
+                    <div class="custom-input">
+                        <label asp-for="User_Id" class="control-label">User Id</label>
+                        <input asp-for="User_Id" class="form-control" />
+                        <span asp-validation-for="User_Id" class="text-danger"></span>
+                        </div>
+                    </div>
+                <div class="col-md-6 col-xs">
+                    <div class="custom-input">
+                        <label asp-for="MenuFileName" class="control-label">Action Name</label>
+                        <input asp-for="MenuFileName" class="form-control" />
+                        <span asp-validation-for="MenuFileName" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-6 col-xs">
+                    <div class="custom-input">
+                        <label asp-for="MenuURL" class="control-label">Controller Name</label>
+                        <input asp-for="MenuURL" class="form-control" />
+                        <span asp-validation-for="MenuURL" class="text-danger"></span>
+                        </div>
+                    </div>
+                <div class="col-md-6 col-xs">
+                    <div class="custom-input">
+                        <label asp-for="USE_YN" class="control-label"> Use Y/N</label>
+                        <input asp-for="USE_YN" class="form-control" />
+                        <span asp-validation-for="USE_YN" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-md-6 col-xs">
+                    <div class="custom-input">
+                        <label asp-for="CreatedDate" class="control-label"></label>
+                        <input asp-for="CreatedDate" class="form-control" />
+                        <span asp-validation-for="CreatedDate" class="text-danger"></span>
+                        </div>
+                    </div>
+                <div class="col-md-6 col-xs mt-5">
+                    <div class="custom-input ml-4">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="IsParent" /> @Html.DisplayNameFor(model => model.IsParent)
+                        </label>
+                    </div>
+                    </div>
+                </div>
+            <div class="row ">
+                <div class="col-md-6 col-xs">
+                    <input type="submit" value="Create" class="btn btn-primary " />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+

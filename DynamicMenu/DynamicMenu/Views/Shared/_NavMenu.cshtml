@@ -1,0 +1,118 @@
+﻿@inject IMenuMasterService menu
+@inject SignInManager<ApplicationUser> signinManager
+@inject UserManager<ApplicationUser> userManager
+<nav >                
+    <ul class="mcd-menu">
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+                <strong>
+                    Home
+                </strong><br/>
+            </a>
+        </li>    
+        @if (User.Identity.IsAuthenticated)
+        {
+            var userId = User.Identity.Name;
+            var userRole = "";
+            if (User.IsInRole("Admin"))
+            {
+                userRole = "Admin";
+            }
+            else if (User.IsInRole("User"))
+            {
+                userRole = "User";
+            }
+            else
+            {
+                userRole = "Extra";
+            }
+    
+            @if (menu.GetMenuMaster(@userRole, @userId).Any())
+            {
+                @if (menu.GetMenuMaster(@userRole, @userId).Any())
+                {
+    
+                    @foreach (var menuNames in menu.GetMenuMaster(userRole, userId).Where(n => n.Parent_MenuID == "*"))
+                    {
+                        @if (menuNames.IsParent)
+                        {
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" asp-area="" asp-controller=@menuNames.MenuURL asp-action=@menuNames.MenuFileName>
+                                    <strong>
+                                        @menuNames.MenuName
+                                    </strong>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    @foreach (var subMenu in menu.GetMenuMaster(userRole, userId).Where(n => n.Parent_MenuID == @menuNames.MenuID))
+                                    {
+                                    <li>
+                                        <a class="nav-link text-dark" asp-area="" asp-controller=@subMenu.MenuURL asp-action=@subMenu.MenuFileName>
+                                            <strong>
+                                                @subMenu.MenuName
+                                            </strong>
+                                        </a>
+                                        @if (subMenu.IsParent)
+                                        {
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            @foreach (var thirdMenu in menu.GetMenuMaster(userRole, userId).Where(n => n.Parent_MenuID == subMenu.MenuID))
+                                            {
+                                                <li>
+                                                    <a class="nav-link text-dark" asp-area="" asp-controller=@thirdMenu.MenuURL asp-action=@thirdMenu.MenuFileName>
+                                                        <strong>
+                                                            @thirdMenu.MenuName
+                                                        </strong>
+                                                    </a>
+                                                </li>
+                                            }
+                                            </ul>
+                                        }
+                                    </li>
+                                    }
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a class="nav-link text-dark" asp-area="" asp-controller=@menuNames.MenuURL asp-action=@menuNames.MenuFileName>
+                                    <strong>
+                                        @menuNames.MenuName
+                                    </strong>
+                                </a>
+                            </li>
+                        }
+                    }
+                }
+            }
+        }
+    
+        @if (signinManager.IsSignedIn(User))
+        {
+            <li class="nav-item">
+                <form method="post" asp-action="Logout" asp-controller="Account">
+                    <button type="submit" class="LogoutBtn">
+                        Logout @User.Identity.Name
+                    </button>
+                </form>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">
+                    <strong>
+                        Login
+                    </strong>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">
+                    <strong>
+                        Register
+                    </strong>
+                </a>
+            </li>
+        }
+    </ul>
+ 
+</nav>
